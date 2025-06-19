@@ -1,0 +1,943 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F5F5F5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #AED7F3;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2E5681;
+    font-weight: 600;
+}
+
+.spesquisa {
+    margin-top: 10px;
+    padding:10px ;
+    width: 340px;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Caixa-de-pesquisa{
+    text-align: center;
+}
+
+.botao-de-procurar {
+    padding: 10px 20px;
+    background-color: #AED7F3;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botao-de-procurar:hover {
+    background-color: #2E5681;
+    transition: 1s;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f1f1f1;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #777;
+    line-height: 1.6;
+}
+
+
+.imagem {
+    text-align: center;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
+.Tipos-de-cabelo {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.thumbnail-1, .thumbnail-2, .thumbnail-3, .thumbnail-4 {
+    width: 200px;
+    height: 300px;
+    background-color: #ddd;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 8px; 
+
+}
+
+.thumbnail-1 img, .thumbnail-2 img, .thumbnail-3 img, .thumbnail-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail-text {
+    position: absolute; 
+    bottom: 20px; 
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: white; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 5px;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+
+.thumbnail-1:hover, .thumbnail-2:hover, .thumbnail-3:hover, .thumbnail-4:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+.thumbnail-1:hover .thumbnail-text, 
+.thumbnail-2:hover .thumbnail-text, 
+.thumbnail-3:hover .thumbnail-text, 
+.thumbnail-4:hover .thumbnail-text {
+      background-color: #b3aef3; 
+}
+
+.hover-effect {
+    transition: background-color 0.3s ease;
+}
+
+
+.banner {
+    padding: 60px 20px;
+    background-color: #ececec;
+    text-align: center;
+
+}
+
+.banner-image {
+    height: 288px;
+    width: 100px;
+
+    background-color: #ccc;   
+    
+}
+
+.carousel {
+    padding: 40px 20px;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.slider {
+    width: 100%;
+    height: 300px;
+    background-color: #ccc;
+}
+
+
+input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer p {
+    margin-top: 20px;
+    color: #999;
+}
+
+.blog{
+    padding: 60px 20px;
+    background-color: #ccc;
+    margin: 10px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.blog-img img{
+    width: 200px;
+    text-align: right;
+    margin-top: auto;
+    float: left;
+    margin-right: 50px;
+}
+
+.text h2{
+    font-size: small;
+
+}
+
+
+.blog-header {
+    text-align: center;
+    padding: 9px;
+    background-color: #f5f5f5;
+}
+
+
+
+.blog-header h1 {
+    font-size: 36px;
+    color: #2E5681;
+    margin-bottom: 10px;
+}
+
+.blog-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.post {
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.post h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.post p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #2E5681;
+    font-weight: bold;
+}
+
+.post:hover {
+    transform: translateY(-10px);
+}
+
+
+footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer p {
+    margin-top: 20px;
+    color: #999;
+}
+
+
+.espaço{
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+
+.eespaço {
+    margin-top: 50px;
+    margin-left: 130px;
+    height: 200px;
+    width: 1120px;
+    background-image: url(./imgs/cacho2.png);   
+
+}
+
+.sources {
+    background-color: #AED7F3;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.sources h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sources ul li {
+    margin-bottom: 10px;
+}
+
+.sources ul li a {
+    color: #2E5681;
+    text-decoration: none;
+}
+
+.sources ul li a:hover {
+    text-decoration: underline;
+}
+
+.bartolomeu {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.eeespaço{
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+
+.eeeespaço {
+    margin-top: 50px;
+    margin-left: 130px;
+    height: 200px;
+    width: 1120px;
+    background-image: url(./imgs/crespo2.png);   
+
+}
+
+.auto{
+    width: 300px;
+    height: 400px;
+}
+
+.auuto{
+    width: 350px;
+    height: 400px;
+}
+
+.produtos {
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.produtos h2 {
+    font-size: 24px;
+    color: #2E5681;
+    margin-top: 20px;
+}
+
+.produtos p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.produtos ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.produtos ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.produtos ul li a {
+    text-decoration: none;
+    color: #2E5681;
+    font-weight: bold;
+}
+
+.produtos ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+
+footer a {
+    color: #2E5681;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 20px;
+    color: #2E5681;
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer nav ul li {
+    font-size: 16px;
+}
+
+
+.suushi{
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+
+.sushi {
+    margin-top: 50px;
+    margin-left: 130px;
+    height: 200px;
+    width: 1120px;
+    background-image: url(./imgs/frizz2.png);   
+
+}
+
+.teste{
+margin-left: 50px;
+}
+
+.dicas-mais-like {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.like-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.like-button {
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.like-button:hover {
+    background-color: #ff3333;
+}
+
+.like-count {
+    font-size: 16px;
+    color: #333;
+}
+
+
+.comment-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.comment-button {
+    background-color: #2E5681; 
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.comment-button:hover {
+    background-color: #1f3c5a; 
+}
+
+.comment-count {
+    font-size: 16px;
+    color: #333;
+}
+
+.interaction-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.like-section, .comment-section {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+
+
+
+.dica-box {
+    background-color: #D680DB;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+margin-left: 410px;
+    
+}
+
+.dica-box p{
+    color: #f5f5f5;
+}
+
+.dica-box {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.dica-box textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #AED7F3;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: vertical;
+    transition: border-color 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dica-box textarea:focus {
+    border-color: #D680DB;
+    outline: none;
+}
+
+.botao-de-publicar {
+    background-color: #D680DB;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.botao-de-publicar:hover {
+    background-color: #CE7DAA;
+}
+
+.posts {
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    min-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.post h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 14px;
+    color: #666;
+}
+
+.post .likes {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    .post-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post {
+        width: 90%;
+    }
+
+    .dica-box {
+        width: 90%;
+    }
+}
+
+
+
+.sobre{
+    padding: 60px 20px;
+    background-color: #AED7F3;
+    margin: 20px;
+    height: 800px;
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.sobre-img img{
+    width: 500px;
+    text-align: center;
+    margin-top: auto;
+    margin-right: 50px;
+}
+
+.integrantes-img img{
+    
+    width: 210px;
+    height: 230px;
+    margin-left: 10px;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+
+
+.int-img{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;  
+    float: inline-start;   
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 10px;
+    box-shadow: #2E5681;
+    margin-bottom: 30px;
+}
+
+.int-img:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.textsob{
+    margin-top: 50px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+}
+
+.texto h2{
+    font-size:large;
+}
+
+.container-perfill{
+    justify-content: space-between;
+    padding: 90px;
+    background-color: #d7f3f3;
+    height: auto;
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.userr{
+    display: flex;
+    flex-direction: row;
+}
+
+.perfill{
+    display: flex;
+    align-items:  center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.foto-perfill{
+    margin-top: 20px;
+    height: 170px;
+}
+
+.usuarioo{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.Tipo-Perfill{
+    color:#fcfcfc;
+    font-size: 15px;
+}
+
+.informacoess{
+    margin-bottom: 10px;
+    padding-right: 90px;
+    padding-left: 70px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nomee{
+    font-size: 60px;
+}
+
+.bioo{
+    font-size: 25px;
+}
+
+.tipo-cabeloo{
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    height: auto;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+}
+
+.Tipo-Cabeloo{
+    font-size: 30px;
+}
+
+.tipoo{
+    margin-bottom: 50px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.dicaa{
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    background-color: #c9c9c9;
+    color:#333;
+}
+
+hr{
+    color:#fff;
+}
+
+.posted-dickss{
+    background-color: #F5F5F5;;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: 100px;
+    height: 800px;
+    overflow: auto;
+}
+
+.itemm{
+    margin-bottom: 40px;
+    background-color: #dadee2;
+    border-radius: 35px;
+    padding: 15px;
+}
+
+.minhas-dicass{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.nome-usuarioo{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.fotoo{
+    width: 70PX;
+}
+
+.nome-dicaa{
+    margin-top: 10px;
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+.postt{
+    padding: 30px;
+    font-size: 30px;
+}
+
